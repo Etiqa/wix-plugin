@@ -86,8 +86,9 @@ public abstract class WixCommand {
     		if (lastSign == '/' || lastSign == '\\') {
     			this.exec = new File(path + ExeName);
     		} else {
-    			String sep = System.getProperty("file.separator");
-    	        this.exec = new File(path + sep + ExeName);
+    			//String sep = System.getProperty("file.separator");
+    	        String sep = '\\'
+                this.exec = new File(path + sep + ExeName);
     		}
     				
     	}
