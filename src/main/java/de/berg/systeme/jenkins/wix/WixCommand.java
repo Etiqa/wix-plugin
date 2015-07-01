@@ -87,7 +87,7 @@ public abstract class WixCommand {
     			this.exec = new File(path + ExeName);
     		} else {
     			//String sep = System.getProperty("file.separator");
-    	        String sep = '\\'
+    	        String sep = '\\';
                 this.exec = new File(path + sep + ExeName);
     		}
     				
